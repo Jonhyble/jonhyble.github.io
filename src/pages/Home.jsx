@@ -1,9 +1,16 @@
 import { useTranslation } from "react-i18next";
-import React, { useState } from 'react'
+import { useParams } from 'react-router-dom';
+import React, { useEffect } from 'react'
 
 export const Home = () => {
-    const { t } = useTranslation();
-    const [name, setName] = useState("Jonathan Joshua Romo Valadez");
+    const { i18n, t } = useTranslation();
+    const { lng } = useParams();
+    const name = "Jonathan Joshua Romo Valadez";
+
+    useEffect(() => {
+        i18n.changeLanguage(lng);
+    }, []);
+
 
     return (
         <main>

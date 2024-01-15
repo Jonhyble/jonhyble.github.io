@@ -3,5 +3,6 @@
     "label": "Selecciona otro lenguaje!",
     "projects": "Proyectos",
     "home": "Inicio",
-    "user": "Mi nombre es: {{name}}"
+    "user": "Mi nombre es: {{name}}",
+    "page-title": "Portafolio"
 }
