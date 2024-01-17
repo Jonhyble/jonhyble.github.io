@@ -17,7 +17,7 @@ export const Home = () => {
     }, [pageTitle]);
 
     return (
-        <main>
+        <main className="w-screen h-fit">
             <h1 className="">{t("title")}</h1>
             <p className="text-3xl font-bold underline">{t("label")}</p>
             <p>{t("user", { name: name })}</p>
