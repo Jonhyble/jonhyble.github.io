@@ -5,11 +5,11 @@ import React, { useState, useEffect } from 'react'
 import chroma from 'chroma-js';
 import './index.css'
 
-const isActive = ({ isActive }) => `flex-1 whitespace-nowrap border-r-2 px-1 py-4 text-xl font-medium text-center w-1/3 ${isActive ? "golden" : "text-white"}`;
+const isActive = ({ isActive }) => `flex-1 whitespace-nowrap border-r-2 px-1 py-4 text-xl font-medium text-center w-1/3 ${isActive ? "active" : "text-white"}`;
 
 export const Menu = () => {
     const { i18n, t } = useTranslation();
-    const lng = i18n.language;
+    const lng = localStorage.getItem("lng") || i18n.language;
     const options = [
         { value: 'en', label: 'English' },
         { value: 'es', label: 'Español' },
@@ -22,7 +22,7 @@ export const Menu = () => {
 
     const handleSelectChange = (event) => {
         i18n.changeLanguage(event.value);
-        console.log(event.value);
+        localStorage.setItem("lng", event.value);
     }
 
     const dot = (color = 'transparent') => ({
@@ -80,10 +80,10 @@ export const Menu = () => {
     return (
         <nav className="w-screen h-fit">
             <div className="border-b border-gray-200 -mb-px flex space-x-8 px-4">
-                <NavLink className={isActive} to={`/${lng}/`}>
+                <NavLink className={isActive} to="/home">
                     {t("home")}
                 </NavLink>
-                <NavLink className={isActive} to={`/${lng}/projects`}>
+                <NavLink className={isActive} to="/projects">
                     {t("projects")}
                 </NavLink>
                 <div className="w-1/3 grid place-items-center">

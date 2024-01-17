@@ -1,10 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { useParams } from 'react-router-dom';
 import React, { useEffect } from 'react'
 
 export const Projects = () => {
     const { i18n, t } = useTranslation();
-    const { lng } = useParams();
+    const lng = localStorage.getItem("lng") || i18n.language;
     const pageTitle = t("page-title");
 
     useEffect(() => {

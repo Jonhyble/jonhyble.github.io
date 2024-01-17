@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 
 export const Home = () => {
     const { i18n, t } = useTranslation();
-    const { lng } = useParams();
+    const lng = localStorage.getItem("lng") || i18n.language;
     const name = "Jonathan Joshua Romo Valadez";
     const pageTitle = t("page-title");
 
