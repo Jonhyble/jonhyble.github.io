@@ -1,5 +1,33 @@
 .active{
-    color: rgb(255, 223, 0);
+    color: rgb(0, 225, 255);
+}
+
+.active:hover{
+    color: rgb(0, 255, 255);
+}
+
+.unactive:hover{
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.option-no-selected{
+    color: black;
+}
+
+.option-no-selected:hover{
+    background-color: black;
+}
+
+.lng-selected{
+    color: black;
+}
+
+.lng-selected:hover{
+    background-color: black;
+}
+
+.container-nav{
+    background-color: rgba(76, 0, 255, 0.856);
 }
 
 .react-select__option{
