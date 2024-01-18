@@ -1,0 +1,18 @@
+{
+    "en": {
+        "title": "Multi-language app",
+        "label": "Select another language!",
+        "projects": "Projects",
+        "home": "Home",
+        "user": "My name is: Jonathan Joshua Romo Valadez",
+        "page-title": "Porfolio"
+    },
+    "es": {
+        "title": "Aplicación en varios idiomas",
+        "label": "Selecciona otro lenguaje!",
+        "projects": "Proyectos",
+        "home": "Inicio",
+        "user": "Mi nombre es: Jonathan Joshua Romo Valadez",
+        "page-title": "Portafolio"
+    }
+}
