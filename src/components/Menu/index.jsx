@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import './index.css'
 import Lang from "../Lang"
 
-const isActive = ({ isActive }) => `flex-1 whitespace-nowrap border-r-2 px-1 py-4 text-xl font-medium text-center w-1/3 container-nav ${isActive ? "active" : "text-white unactive"}`;
+const isActive = ({ isActive }) => `flex-1 whitespace-nowrap grid place-content-center border-r-2 border-b-2 border-blue-600 text-xl hover:h-[80px] hover:rounded-b-3xl font-medium text-center w-2/5 bg-blue-700 ${isActive ? "text-sky-200 hover:text-sky-300" : "text-sky-50 hover:text-sky-100"}`;
 
 export const Menu = () => {
   const pageTitle = Lang("page-title");
@@ -30,23 +30,23 @@ export const Menu = () => {
   }
 
   const listItems = options.map((option) =>
-    <li key={option.value} className={`menu-item border-x-2 border-b-2 ${(option.value === lng) ? "lng-selected" : "option-no-selected"}`}><button onClick={handleSelectChange} value={option.value} className="w-full h-full menu-button">{option.label}</button></li>
+    <li key={option.value} className={`border-x-2 h-16 border-blue-600 border-b-2 hover:text-sky-700 ${(option.value === lng) ? "bg-blue-500 hover:bg-blue-300" : "bg-blue-400 hover:bg-blue-200"}`}><button onClick={handleSelectChange} value={option.value} className="w-full h-full menu-button">{option.label}</button></li>
   );
 
   return (
-    <nav className="w-screen navbar">
-      <div className="border-b-2 border-gray-200 -mb-px flex h-full">
+    <nav className="w-screen navbar opacity-80 fixed">
+      <div className="-mb-px flex h-full">
         <NavLink className={isActive} to="/home">
           {Lang("home")}
         </NavLink>
         <NavLink className={isActive} to="/projects">
           {Lang("projects")}
         </NavLink>
-        <div className="w-1/3 text-center py-auto container-nav">
+        <div className="w-1/5 text-center text-sky-50 hover:text-sky-100 border-b-2 border-blue-600 bg-blue-700">
           <button className="w-full h-full buttonDropdown text-xl" onClick={handleOpenChange}>{Lang("language")}</button>
           {
             open ?
-              (<ul className="menu w-1/3 h-fit mt-[2px]">
+              (<ul className="menu w-1/5 mt-[2px]">
                 {listItems}
               </ul>)
               : null

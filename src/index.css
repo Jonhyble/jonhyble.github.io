@@ -9,12 +9,16 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: rgba(255, 255, 255, 0.644);
+  background-color: rgb(147 197 253);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  margin-top: 70px;
 }
 
 a {
