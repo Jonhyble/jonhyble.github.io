@@ -1,35 +1,74 @@
-.active{
+.navbar {
+    height: 10%;
+    z-index: 1;
+}
+
+.active {
     color: rgb(0, 225, 255);
 }
 
-.active:hover{
+.active:hover {
     color: rgb(0, 255, 255);
 }
 
-.unactive:hover{
+.unactive:hover {
     color: rgba(255, 255, 255, 0.842);
 }
 
-.option-no-selected{
-    color: black;
+.buttonDropdown {
+    position: relative;
 }
 
-.option-no-selected:hover{
-    background-color: black;
+.menu {
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    z-index: 1;
 }
 
-.lng-selected{
-    color: black;
+.menu-item {
+    background-color: rgb(2, 32, 131);
+    border-color: rgb(255, 255, 255);
 }
 
-.lng-selected:hover{
-    background-color: black;
+.menu-item:hover {
+    background-color: lightgray;
 }
 
-.container-nav{
+.menu-button {
+    text-align: center;
+  
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 5px;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+  }
+
+.option-no-selected {
+    color: rgb(255, 255, 255);
+    background-color: rgb(167, 168, 255);
+}
+
+.option-no-selected:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.lng-selected {
+    color: rgb(255, 255, 255);
+    background-color: rgb(24, 209, 255);
+}
+
+.lng-selected:hover {
+    background-color: rgb(120, 206, 255);
+}
+
+.container-nav {
     background-color: rgba(76, 0, 255, 0.856);
 }
 
-.react-select__option{
+.react-select__option {
     color: rgb(7, 148, 2);
 }

@@ -5,7 +5,8 @@
         "projects": "Projects",
         "home": "Home",
         "user": "My name is: Jonathan Joshua Romo Valadez",
-        "page-title": "Porfolio"
+        "page-title": "Porfolio",
+        "language": "Language"
     },
     "es": {
         "title": "Aplicación en varios idiomas",
@@ -13,6 +14,7 @@
         "projects": "Proyectos",
         "home": "Inicio",
         "user": "Mi nombre es: Jonathan Joshua Romo Valadez",
-        "page-title": "Portafolio"
+        "page-title": "Portafolio",
+        "language": "Lenguaje"
     }
 }

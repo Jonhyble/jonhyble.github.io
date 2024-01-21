@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import './index.css'
 import Lang from "../Lang"
 
@@ -8,40 +8,51 @@ const isActive = ({ isActive }) => `flex-1 whitespace-nowrap border-r-2 px-1 py-
 export const Menu = () => {
   const pageTitle = Lang("page-title");
   const lng = localStorage.getItem("lng") || "en";
+  const [open, setOpen] = useState(false);
+
+  const handleOpenChange = () => {
+    setOpen(!open);
+  }
 
   useEffect(() => {
-      document.title = pageTitle;
+    document.title = pageTitle;
   }, []);
 
   const options = [
-      { value: 'en', label: 'English' },
-      { value: 'es', label: 'Español' },
+    { value: 'en', label: 'English' },
+    { value: 'es', label: 'Español' },
   ]
 
   const handleSelectChange = (event) => {
-      localStorage.setItem("lng", event.target.value);
-      window.location.reload(true);
+    console.log(event.target.value);
+    localStorage.setItem("lng", event.target.value);
+    window.location.reload(true);
   }
 
   const listItems = options.map((option) =>
-    <option key={option.value} value={option.value} className={`text-xl ${(option.value === lng) ? "lng-selected" : "option-no-selected"}`}>{option.label}</option>
+    <li key={option.value} className={`menu-item border-x-2 border-b-2 ${(option.value === lng) ? "lng-selected" : "option-no-selected"}`}><button onClick={handleSelectChange} value={option.value} className="w-full h-full menu-button">{option.label}</button></li>
   );
 
   return (
-      <nav className="w-screen h-fit">
-          <div className="border-b border-gray-200 -mb-px flex">
-              <NavLink className={isActive} to="/home">
-                  {Lang("home")}
-              </NavLink>
-              <NavLink className={isActive} to="/projects">
-                  {Lang("projects")}
-              </NavLink>
-              <div className="w-1/3 grid place-items-center container-nav">
-                <select id="lngSelect" className="w-full h-full text-center bg-transparent font-medium text-xl" defaultValue={localStorage.getItem("lng") || "en"} onChange={handleSelectChange}>
-                  {listItems}
-                </select>
-              </div>
-          </div>
-      </nav>
+    <nav className="w-screen navbar">
+      <div className="border-b-2 border-gray-200 -mb-px flex h-full">
+        <NavLink className={isActive} to="/home">
+          {Lang("home")}
+        </NavLink>
+        <NavLink className={isActive} to="/projects">
+          {Lang("projects")}
+        </NavLink>
+        <div className="w-1/3 text-center py-auto container-nav">
+          <button className="w-full h-full buttonDropdown text-xl" onClick={handleOpenChange}>{Lang("language")}</button>
+          {
+            open ?
+              (<ul className="menu w-1/3 h-fit mt-[2px]">
+                {listItems}
+              </ul>)
+              : null
+          }
+        </div>
+      </div>
+    </nav>
   )
 }
