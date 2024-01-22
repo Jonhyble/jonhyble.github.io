@@ -14,7 +14,8 @@
         "new-technologies": "Learn new technologies",
         "new-languages": "Learn new languages",
         "backend": "Backend programming",
-        "web": "Creation of webpages"
+        "web": "Creation of webpages",
+        "contact": "Contact"
     },
     "es": {
         "title": "Mi portafolio",
@@ -23,7 +24,7 @@
         "home": "Inicio",
         "user": "Mi nombre es Jonathan Joshua Romo Valadez y soy un programador que actualmente está estudiando en la Universidad de Guadalajara, en la carrera de Ingeniería en Computación en CUCEI (Centro Universitario de Ciencias Exactas e Ingeniería). Terminé la carrera de TPSI (Tecnólogo Profesional en Sistemas Informáticos) en el Polítecnico de Guadalajara.",
         "page-title": "Portafolio",
-        "language": "Lenguaje",
+        "language": "Idioma",
         "spanish": "Español (Nativo)",
         "english": "Ingles (Intermedio a alto)",
         "programming": "Lenguajes de programación, tecnologías y frameworks que conozco",
@@ -31,6 +32,7 @@
         "new-technologies": "Aprender nuevas tecnologías",
         "new-languages": "Aprender nuevos idiomas",
         "backend": "Programar en backend",
-        "web": "Creación de páginas web"
+        "web": "Creación de páginas web",
+        "contact": "Contacto"
     }
 }

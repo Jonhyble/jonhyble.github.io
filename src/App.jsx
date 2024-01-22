@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { Menu } from "./components/Menu";
+import { Footer } from "./components/Footer";
 import { Projects } from "./pages/Projects";
 import { Home } from "./pages/Home";
 
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/home" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </Suspense>
   )

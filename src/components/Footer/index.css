@@ -1,0 +1,10 @@
+.footer-cont {
+    position: fixed;
+    bottom: 0;
+    height: 145px;
+    width: 100%;
+}
+
+.cont-div {
+    height: 120px;
+}
