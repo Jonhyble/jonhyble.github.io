@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 import './index.css'
 import Lang from "../Lang"
 
-const isActive = ({ isActive }) => `flex-1 whitespace-nowrap grid place-content-center border-r-2 border-b-2 border-blue-600 text-xl hover:h-[80px] hover:rounded-b-3xl font-medium text-center w-2/5 bg-blue-700 ${isActive ? "text-sky-200 hover:text-sky-300" : "text-sky-50 hover:text-sky-100"}`;
+const isActive = ({ isActive }) => `flex-1 whitespace-nowrap grid place-content-center border-r-2 border-b-2 border-blue-600 text-xl hover:h-[80px] hover:rounded-b-3xl font-medium text-center w-1/3 bg-blue-700 ${isActive ? "text-sky-200 hover:text-sky-300" : "text-sky-50 hover:text-sky-100"}`;
 
 export const Menu = () => {
   const pageTitle = Lang("page-title");
@@ -42,11 +44,11 @@ export const Menu = () => {
         <NavLink className={isActive} to="/projects">
           {Lang("projects")}
         </NavLink>
-        <div className="w-1/5 text-center text-sky-50 hover:text-sky-100 border-b-2 border-blue-600 bg-blue-700">
-          <button className="w-full h-full buttonDropdown text-xl" onClick={handleOpenChange}>{Lang("language")}</button>
+        <div className="w-1/3 text-center text-sky-50 hover:text-sky-100 border-b-2 border-blue-600 bg-blue-700">
+          <button className="w-full h-full buttonDropdown text-xl" onClick={handleOpenChange}><FontAwesomeIcon icon={faLanguage} className="h-1/3" /> {Lang("language")}</button>
           {
             open ?
-              (<ul className="menu w-1/5 mt-[2px]">
+              (<ul className="menu w-1/3 mt-[2px]">
                 {listItems}
               </ul>)
               : null

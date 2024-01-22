@@ -10,6 +10,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: rgb(147 197 253);
+  overflow-x: hidden;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,7 +19,7 @@
 }
 
 main {
-  margin-top: 70px;
+  margin-top: 90px;
 }
 
 a {

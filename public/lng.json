@@ -1,20 +1,36 @@
 {
     "en": {
-        "title": "Multi-language app",
-        "label": "Select another language!",
+        "title": "My portfolio",
+        "label": "Languages I know",
         "projects": "Projects",
         "home": "Home",
-        "user": "My name is: Jonathan Joshua Romo Valadez",
-        "page-title": "Porfolio",
-        "language": "Language"
+        "user": "My name is Jonathan Joshua Romo Valadez and I'm a programmer who is currently studying at University of Guadalajara, in the career of Computer Engineering at CUCEI (Centro Universitario de Ciencias Exactas e Ingeniería). I finished the career of TPSI (Tecnólogo Profesional en Sistemas Informáticos) at the Polítecnico de Guadalajara.",
+        "page-title": "Portfolio",
+        "language": "Language",
+        "spanish": "Spanish (Native)",
+        "english": "English (Intermediate to high)",
+        "programming": "Programming languages, technologies and frameworks I know",
+        "interests": "Interests",
+        "new-technologies": "Learn new technologies",
+        "new-languages": "Learn new languages",
+        "backend": "Backend programming",
+        "web": "Creation of webpages"
     },
     "es": {
-        "title": "Aplicación en varios idiomas",
-        "label": "Selecciona otro lenguaje!",
+        "title": "Mi portafolio",
+        "label": "Idiomas que conozco",
         "projects": "Proyectos",
         "home": "Inicio",
-        "user": "Mi nombre es: Jonathan Joshua Romo Valadez",
+        "user": "Mi nombre es Jonathan Joshua Romo Valadez y soy un programador que actualmente está estudiando en la Universidad de Guadalajara, en la carrera de Ingeniería en Computación en CUCEI (Centro Universitario de Ciencias Exactas e Ingeniería). Terminé la carrera de TPSI (Tecnólogo Profesional en Sistemas Informáticos) en el Polítecnico de Guadalajara.",
         "page-title": "Portafolio",
-        "language": "Lenguaje"
+        "language": "Lenguaje",
+        "spanish": "Español (Nativo)",
+        "english": "Ingles (Intermedio a alto)",
+        "programming": "Lenguajes de programación, tecnologías y frameworks que conozco",
+        "interests": "Intereses",
+        "new-technologies": "Aprender nuevas tecnologías",
+        "new-languages": "Aprender nuevos idiomas",
+        "backend": "Programar en backend",
+        "web": "Creación de páginas web"
     }
 }
