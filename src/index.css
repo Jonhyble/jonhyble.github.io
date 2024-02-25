@@ -57,3 +57,27 @@ h1 {
     background-color: #f9f9f9;
   }
 }
+
+html::-webkit-scrollbar {
+  border-radius: 8px;
+  width: 10px;
+  background-color: #65ceff;
+  height: 6px;
+}
+
+section::-webkit-scrollbar {
+  border-radius: 8px;
+  width: 10px;
+  background-color: #65ceff;
+  height: 6px;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #0369A1;
+}
+
+section::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #0369A1;
+}

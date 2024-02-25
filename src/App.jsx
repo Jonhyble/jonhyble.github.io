@@ -10,12 +10,11 @@ const App = () => {
     <Suspense fallback="loading">
       <BrowserRouter>
         <Menu />
-        <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home />} />
-          {/* <Route path="/projects" element={<Projects />} /> */}
-          <Route path="/*" element={<Navigate to="/home" />} />
-        </Routes>
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/*" element={<Navigate to="/home" />} />
+          </Routes>
         <Footer />
       </BrowserRouter>
     </Suspense>

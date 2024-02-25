@@ -38,13 +38,12 @@ export const Menu = () => {
   return (
     <nav className="w-screen navbar opacity-80 fixed">
       <div className="-mb-px flex h-full">
-        {/* <NavLink className={isActive} to="/home">
+        <NavLink className={isActive} to="/home">
           {Lang("home")}
         </NavLink>
         <NavLink className={isActive} to="/projects">
           {Lang("projects")}
-        </NavLink> */}
-        <div className="w-2/3 border-b-2 border-blue-600 border-r-2 bg-blue-700"></div>
+        </NavLink>
         <div className="w-1/3 text-center text-sky-50 hover:text-sky-100 border-b-2 border-blue-600 bg-blue-700">
           <button className="w-full h-full buttonDropdown text-xl" onClick={handleOpenChange}><FontAwesomeIcon icon={faLanguage} className="h-1/3" /> {Lang("language")}</button>
           {

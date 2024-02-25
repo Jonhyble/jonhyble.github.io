@@ -1,10 +1,10 @@
 {
     "en": {
         "title": "My portfolio",
-        "label": "Languages I know",
-        "projects": "Projects",
+        "label": "Languages that I know",
+        "projects": "My projects",
         "home": "Home",
-        "user": "My name is Jonathan Joshua Romo Valadez and I'm a programmer who is currently studying at University of Guadalajara, in the career of Computer Engineering at CUCEI (Centro Universitario de Ciencias Exactas e Ingeniería). I finished the career of TPSI (Tecnólogo Profesional en Sistemas Informáticos) at the Polítecnico de Guadalajara.",
+        "user": "My name is Jonathan Joshua Romo Valadez and I'm a programmer who is currently studying at University of Guadalajara, in the career of Computer Engineering at CUCEI (Centro Universitario de Ciencias Exactas e Ingeniería). I finished the career of Computer systems technologist at the Polítecnico de Guadalajara.",
         "page-title": "Portfolio",
         "language": "Language",
         "spanish": "Spanish (Native)",
@@ -20,7 +20,7 @@
     "es": {
         "title": "Mi portafolio",
         "label": "Idiomas que conozco",
-        "projects": "Proyectos",
+        "projects": "Mis proyectos",
         "home": "Inicio",
         "user": "Mi nombre es Jonathan Joshua Romo Valadez y soy un programador que actualmente está estudiando en la Universidad de Guadalajara, en la carrera de Ingeniería en Computación en CUCEI (Centro Universitario de Ciencias Exactas e Ingeniería). Terminé la carrera de TPSI (Tecnólogo Profesional en Sistemas Informáticos) en el Polítecnico de Guadalajara.",
         "page-title": "Portafolio",
