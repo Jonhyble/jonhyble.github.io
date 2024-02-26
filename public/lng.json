@@ -15,7 +15,11 @@
         "new-languages": "Learn new languages",
         "backend": "Backend programming",
         "web": "Creation of webpages",
-        "contact": "Contact"
+        "contact": "Contact",
+        "visits_title": "Visits program for CUCEI",
+        "button_images": "Images",
+        "button_description": "Description",
+        "button_technologies": "Technologies"
     },
     "es": {
         "title": "Mi portafolio",
@@ -33,6 +37,10 @@
         "new-languages": "Aprender nuevos idiomas",
         "backend": "Programar en backend",
         "web": "Creación de páginas web",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "visits_title": "Programa de visitas para CUCEI",
+        "button_images": "Imágenes",
+        "button_description": "Descripción",
+        "button_technologies": "Tecnologías"
     }
 }
