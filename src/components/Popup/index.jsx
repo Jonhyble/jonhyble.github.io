@@ -79,7 +79,7 @@ export const Popup = ({ popup, setPopup }) => {
             } else if (content === 1) {
                 return <div className="w-full h-fit bg-blue-200 text-blue-800 m-auto text-center absolute inset-y-1/2 text-4xl">{Lang(popup + "_description")}</div>
             } else {
-                return  <div className="flex flex-wrap justify-center absolute inset-1/2">{listItems}</div>
+                return  <div className="flex flex-wrap justify-center absolute inset-y-1/2 w-full">{listItems}</div>
             }
     }
     
