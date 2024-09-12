@@ -19,10 +19,15 @@ export const Popup = ({ popup, setPopup }) => {
 
     const technologies = {
         "visits" : [
-            "React"
+            "React", 
+            "React Native",
+            "JavaScript",
+            "MySql"
         ],
         "repruebainador" : [
-            "Python"
+            "Python",
+            "JavaScript",
+            "Electron"
         ]
     }
 
