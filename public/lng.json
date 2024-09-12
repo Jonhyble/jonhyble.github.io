@@ -19,7 +19,10 @@
         "visits_title": "Visits program for CUCEI",
         "button_images": "Images",
         "button_description": "Description",
-        "button_technologies": "Technologies"
+        "button_technologies": "Technologies",
+        "repruebainador_title": "Repruebainador (automatic exam grader)",
+        "repruebainador_description": "This is a project designed as a desktop app to help teachers on UdeG to grade exams of multiple options.",
+        "visits_description": "This is a project created for CUCEI to accept extern visits at certain hour and day. This project has a local webpage and an application to assign day and hour."
     },
     "es": {
         "title": "Mi portafolio",
@@ -41,6 +44,9 @@
         "visits_title": "Programa de visitas para CUCEI",
         "button_images": "Imágenes",
         "button_description": "Descripción",
-        "button_technologies": "Tecnologías"
+        "button_technologies": "Tecnologías",
+        "repruebainador_title": "Repruebainador (calificador automático de examenes)",
+        "repruebainador_description": "Este es un proyecto diseñado como una aplicación de escritorio para ayudar a profesores en UdeG a calificar examenes de múltiples opciones.",
+        "visits_description": "Este es un proyecto creado para CUCEI para aceptar visitas externas a una cierta hora y día. Este proyecto tiene una página web local y una aplicación para asignar día y hora."
     }
 }
