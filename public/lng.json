@@ -21,8 +21,10 @@
         "button_description": "Description",
         "button_technologies": "Technologies",
         "repruebainador_title": "Repruebainador (automatic exam grader)",
+        "stenography_title": "Stenography",
         "repruebainador_description": "This is a project designed as a desktop app to help teachers on UdeG to grade exams of multiple options.",
-        "visits_description": "This is a project created for CUCEI to accept extern visits at certain hour and day. This project has a local webpage and an application to assign day and hour."
+        "visits_description": "This is a project created for CUCEI to accept extern visits at certain hour and day. This project has a local webpage and an application to assign day and hour.",
+        "steganography-description": "This is a project for a course in University using a lot of tools that we learned through it. In this project you can insert words and hide them within an image."
     },
     "es": {
         "title": "Mi portafolio",
@@ -46,7 +48,9 @@
         "button_description": "Descripción",
         "button_technologies": "Tecnologías",
         "repruebainador_title": "Repruebainador (calificador automático de examenes)",
+        "stenography_title": "Esteganografía",
         "repruebainador_description": "Este es un proyecto diseñado como una aplicación de escritorio para ayudar a profesores en UdeG a calificar examenes de múltiples opciones.",
-        "visits_description": "Este es un proyecto creado para CUCEI para aceptar visitas externas a una cierta hora y día. Este proyecto tiene una página web local y una aplicación para asignar día y hora."
+        "visits_description": "Este es un proyecto creado para CUCEI para aceptar visitas externas a una cierta hora y día. Este proyecto tiene una página web local y una aplicación para asignar día y hora.",
+        "steganography-description": "Este es un proyecto para un curso en la Universidad usando un monton de herramientas que aprendimos a lo largo de éste. En este proyecto puedes insertar palabras y ocultarlas en una imagen."
     }
 }

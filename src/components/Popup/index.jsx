@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Lang from "../../components/Lang"
-
+import './index.css'
 
 export const Popup = ({ popup, setPopup }) => {
     const [content, setContent] = useState(0);
@@ -14,6 +14,10 @@ export const Popup = ({ popup, setPopup }) => {
         "repruebainador" : [
             "/repruebainador/home_page.png",
             "/repruebainador/01.png"
+        ],
+        "stenography" : [
+            "/stenography/home_page.png",
+            "/stenography/01.png"
         ]
     }
 
@@ -28,6 +32,14 @@ export const Popup = ({ popup, setPopup }) => {
             "Python",
             "JavaScript",
             "Electron"
+        ],
+        "stenography" : [
+            "JavaScript",
+            "React",
+            "Python",
+            "FastAPI",
+            "Docker",
+            "Kubernetes"
         ]
     }
 
@@ -69,7 +81,7 @@ export const Popup = ({ popup, setPopup }) => {
     }
 
     const listItems = technologies[popup]?.map((option) =>
-        <p key={option} className="text-lg font-bold text-center flex-none w-36 mx-5 mb-6 p-3 border-2 border-blue-400 bg-blue-500 hover:opacity-70 text-white rounded-3xl">{option}</p>
+        <p key={option} className="text-lg font-bold text-center flex-none w-36 m-2 p-3 border-2 border-blue-400 bg-blue-500 hover:opacity-70 text-white rounded-3xl">{option}</p>
     );
 
     function PlaceContent() {
@@ -79,7 +91,7 @@ export const Popup = ({ popup, setPopup }) => {
             } else if (content === 1) {
                 return <div className="w-full h-fit bg-blue-200 text-blue-800 m-auto text-center absolute inset-y-1/2 text-4xl">{Lang(popup + "_description")}</div>
             } else {
-                return  <div className="flex flex-wrap justify-center absolute inset-y-1/2 w-full">{listItems}</div>
+                return  <div className="grid place-content-center grid-template w-full h-full">{listItems}</div>
             }
     }
     
